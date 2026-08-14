@@ -1,0 +1,36 @@
+{
+  "name": "@aaaa-zhen/liquid-glass",
+  "version": "0.1.0",
+  "description": "Configurable liquid-glass material as a self-contained WebGL component",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "build": "npm run build:shaders && npm run build:demo",
+    "build:shaders": "node scripts/embed-shaders.mjs",
+    "build:demo": "node scripts/build-demo.mjs",
+    "demo": "python3 -m http.server 8747"
+  },
+  "keywords": [
+    "liquid-glass",
+    "glassmorphism",
+    "webgl",
+    "shader"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaaa-zhen/liquid-glass.git",
+    "directory": "web"
+  },
+  "bugs": {
+    "url": "https://github.com/aaaa-zhen/liquid-glass/issues"
+  },
+  "homepage": "https://github.com/aaaa-zhen/liquid-glass#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

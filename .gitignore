@@ -1,0 +1,5 @@
+.DS_Store
+node_modules/
+android/**/build/
+*.mp4
+!docs/video.mp4
